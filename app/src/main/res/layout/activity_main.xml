@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#FA1212"
+        android:text="QUẢN LÝ THÍ SINH"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        style="@style/style_main"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/khoa"
+            style="@style/style_main_cardview">
+
+            <LinearLayout style="@style/style_main_cardview_item">
+
+                <ImageView
+                    android:id="@+id/imgkhoa"
+                    style="@style/style_main_cardview_item_image"
+                    android:src="@drawable/truong" />
+
+                <TextView
+                    style="@style/style_main_cardview_item_kind"
+                    android:text="Khoa" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/sinhvien"
+            style="@style/style_main_cardview">
+
+            <LinearLayout style="@style/style_main_cardview_item">
+
+                <ImageView
+                    android:id="@+id/imgsinhvien"
+                    style="@style/style_main_cardview_item_image"
+                    android:src="@drawable/sinhvien" />
+
+                <TextView
+                    style="@style/style_main_cardview_item_kind"
+                    android:text="Sinh Viên" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        style="@style/style_main"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/diem"
+            style="@style/style_main_cardview">
+
+            <LinearLayout style="@style/style_main_cardview_item">
+
+                <ImageView
+                    android:id="@+id/imgdiem"
+                    style="@style/style_main_cardview_item_image"
+                    android:src="@drawable/diem" />
+
+                <TextView
+                    style="@style/style_main_cardview_item_kind"
+                    android:text="Điểm" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/mon"
+            style="@style/style_main_cardview">
+
+            <LinearLayout style="@style/style_main_cardview_item">
+
+                <ImageView
+                    android:id="@+id/imgmon"
+                    style="@style/style_main_cardview_item_image"
+                    android:src="@drawable/mon" />
+
+                <TextView
+                    style="@style/style_main_cardview_item_kind"
+                    android:text="Môn" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>
